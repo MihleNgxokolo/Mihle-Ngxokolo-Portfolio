@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title> Portfolio Website </title>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/11448bbc99.js" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p> Web Developer </p>
+                    <h1> Hi, I'm <span>Mihle</span> Ngxokolo<br>From South Africa.</h1>
+                </div>
+            </div> 
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/Image6.jpg">
+                    </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p> 
+                                I am currently a full-time second year student at Nelson Mandela University studying towards Information Technology (Software Development). 
+                                I would like the opportunity to gain more skills and experience by joining your company through volunteering or doing on the job training to further my career. 
+                                Where opportunity avails, I see myself making a living by being proficient in Fullstack Web Development. I am a clear-thinking individual with a well-developed power of persuasion in speech and writing, effective motivational and team building skills, responsible, conscientious, and happy to work both as part of the team and own initiative.
+                            </p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('it skills matrix conversant with')">IT Skills Matrix Conversant With</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="it skills matrix conversant with">
+                                <ul>
+                                    <li><span>Web Development</span></li>
+                                    <li><span>Computer Skills</span><br>MS Office(Word, PowerPoint, Excel, Access, Outlook)</li>
+                                    <li><span>SQL</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Making my portfolio website</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>East London Science College</span></li>
+                                    <li><span>Udemy Full Stack Web Development</span></li>
+                                    <li><span>Nelson Mandela University Diploma in IT</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Fullstack Web Development including both frontend & backend.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h2>Game Development</h2>
+                        <p>Game Development including both frontend & backend.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>SQL</h2>
+                        <p>SQL server projects</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/Portfolio3.webp">
+                        <div class="layer">
+                            <h3>PC Setup</h3>
+                            <p>Get to connect with clients from around the world.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Portfolio2.jpg">
+                        <div class="layer">
+                            <h3>Gaming Setup</h3>
+                            <p>Get to connect with clients from around the world.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Portfolio5.jpg">
+                        <div class="layer">
+                            <h3>Desktop Setup</h3>
+                            <p>Get to connect with clients from around the world.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div id="contact"> 
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>mihlenjbbusiness21@outlook.com</p>
+                        <p><i class="fa-solid fa-phone"></i>071 769 3945</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>  
+                        <a href="images/Mihle Ngxokolo.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Mihle Ngxokolo. All Rights Reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>
